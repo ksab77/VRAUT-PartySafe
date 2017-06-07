@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff04 scene
 //Name: TakeOutBox_v1.ma
-//Last modified: Wed, Jun 07, 2017 02:50:22 PM
+//Last modified: Wed, Jun 07, 2017 02:51:27 PM
 //Codeset: UTF-8
 requires maya "2017ff04";
 requires "stereoCamera" "10.0";
@@ -14,13 +14,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "D3A935CF-5245-FC21-30C7-7ABB6AF65707";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 3.0052579117453706 3.7002456824438195 -4.5385291692339527 ;
+	setAttr ".t" -type "double3" 2.9531254617939258 3.6583981177890887 -4.4651716857810229 ;
 	setAttr ".r" -type "double3" -24.938352729673618 504.59999999991834 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "1C58CDA9-784E-CFB5-1879-29AF5BA5FCFB";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 6.1783739596075424;
+	setAttr ".coi" 6.0791251239266;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
