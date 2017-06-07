@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff04 scene
 //Name: Chair_TEXTURED.ma
-//Last modified: Tue, Jun 06, 2017 08:22:11 PM
+//Last modified: Tue, Jun 06, 2017 08:34:11 PM
 //Codeset: UTF-8
 requires maya "2017ff04";
 requires -nodeType "RenderMan" -nodeType "PxrDebugShadingContext" -nodeType "PxrToFloat"
@@ -19,8 +19,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "65ED2DE3-314B-1D6F-C645-358411D2CE13";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -13.272450884466986 1.2111846284685637 16.595362748896772 ;
-	setAttr ".r" -type "double3" 717.8616472584722 1402.1999999999653 0 ;
+	setAttr ".t" -type "double3" -14.354021440932987 13.044404616237653 -7.0521063155807511 ;
+	setAttr ".r" -type "double3" 686.66164725846079 1317.3999999999271 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "DDEB2688-5B49-6A6F-9A52-B5B3C4333107";
 	setAttr -k off ".v" no;
