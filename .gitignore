@@ -11,17 +11,3 @@ ehthumbs.db
 Thumbs.db
 
 
-STARGAZING_MAYA/sourceimages/rory_textures_idk_NEW.png
-STARGAZING_MAYA/assets/chars/SG_Rory/autosave/*
-STARGAZING_MAYA/movies/*
-STARGAZING_MAYA/autosave/*
-autosave/
-### Renderman files ###
-renderman/
-
-### Adobe files ###
-Adobe Premiere Pro Audio Previews/
-
-### Python files ###
-*.pyc
-
