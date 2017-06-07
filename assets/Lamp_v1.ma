@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff04 scene
 //Name: Lamp_v1.ma
-//Last modified: Wed, Jun 07, 2017 12:17:54 PM
+//Last modified: Wed, Jun 07, 2017 12:19:22 PM
 //Codeset: UTF-8
 requires maya "2017ff04";
 requires "stereoCamera" "10.0";
@@ -14,13 +14,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "490D4413-4047-8184-B447-738A6378DA6C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 19.94735074670416 7.8406086324618407 11.546312143519735 ;
-	setAttr ".r" -type "double3" -9.9383527295821814 64.59999999999151 0 ;
+	setAttr ".t" -type "double3" -1.4134888934918897 5.0302525634177471 13.594728427696745 ;
+	setAttr ".r" -type "double3" -3.9383527295823706 -14.999999999999147 1.0289851569409205e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "5040F4B0-0B4A-1D55-E006-EFBCF82E2AA5";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 20.749967170401121;
+	setAttr ".coi" 11.2232712006467;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -399,9 +399,13 @@ createNode mesh -n "pCylinderShape4" -p "pCylinder4";
 	setAttr ".pt[149]" -type "float3" -0.89237016 -0.011596687 -1.4135679 ;
 createNode transform -n "pSphere1";
 	rename -uid "F8ECD35B-604A-F59C-6AC0-20B714707906";
-	setAttr ".t" -type "double3" 1.3391145182496929 4.6462115047767139 2.5417074951647884 ;
+	setAttr ".t" -type "double3" 1.3877782022839691 4.6230756738767127 2.4785453783422899 ;
 	setAttr ".r" -type "double3" -35.120878022447485 10.367044933454663 10.760560138332847 ;
 	setAttr ".s" -type "double3" 0.64283393384662846 0.64085931486300352 0.64283393384662846 ;
+	setAttr ".rp" -type "double3" -3.8315888276495246e-08 -0.32042965743150176 -3.8315888276495246e-08 ;
+	setAttr ".rpt" -type "double3" 0.081524019400467204 0.06913961788389919 0.18133487196336506 ;
+	setAttr ".sp" -type "double3" -5.9604644775390625e-08 -0.5 -5.9604644775390625e-08 ;
+	setAttr ".spt" -type "double3" 2.1288756498895379e-08 0.17957034256849827 2.1288756498895379e-08 ;
 createNode mesh -n "pSphereShape1" -p "pSphere1";
 	rename -uid "3A392DB4-7244-C95E-90E1-B9A95F412748";
 	setAttr -k off ".v";
