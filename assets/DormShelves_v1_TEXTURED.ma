@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff04 scene
 //Name: DormShelves_v1_TEXTURED.ma
-//Last modified: Tue, Jun 06, 2017 07:39:55 PM
+//Last modified: Tue, Jun 06, 2017 07:59:24 PM
 //Codeset: UTF-8
 requires maya "2017ff04";
 requires "stereoCamera" "10.0";
@@ -14,8 +14,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "4078C7B2-5E42-ADB5-87B8-B186E31844B6";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -11.451998033309025 9.2174290951404974 -11.772192416485483 ;
-	setAttr ".r" -type "double3" -20.738352729595867 -142.99999999991749 0 ;
+	setAttr ".t" -type "double3" -17.938982393195012 8.3152945944280354 6.4751921720053662 ;
+	setAttr ".r" -type "double3" -17.738352729604806 -74.599999999906629 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "7D9A499D-734A-A14E-C4D6-BB82BBE9B3EC";
 	setAttr -k off ".v" no;
