@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff04 scene
 //Name: DormBed_v1.ma
-//Last modified: Wed, Jun 07, 2017 10:22:34 AM
+//Last modified: Wed, Jun 07, 2017 10:24:26 AM
 //Codeset: UTF-8
 requires maya "2017ff04";
 requires "stereoCamera" "10.0";
@@ -14,13 +14,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "6B00659E-F346-7A16-877E-2B934BEC4685";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -3.8759738455094341 8.5717126576600648 -10.52242351069073 ;
-	setAttr ".r" -type "double3" -20.738352730095542 1623.4000000002857 0 ;
+	setAttr ".t" -type "double3" -2.4635182662204453 12.912030646272235 -13.94523875716652 ;
+	setAttr ".r" -type "double3" -30.338352730094744 1634.2000000002754 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "AEB9FB10-1945-9C28-4DAD-B883AB3E5CEC";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 15.941833506950474;
+	setAttr ".coi" 20.094389278996967;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
