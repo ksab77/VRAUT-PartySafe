@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff04 scene
 //Name: fries_TEXTURED.ma
-//Last modified: Thu, Jun 08, 2017 02:40:15 PM
+//Last modified: Thu, Jun 08, 2017 02:46:05 PM
 //Codeset: UTF-8
 requires maya "2017ff04";
 requires "stereoCamera" "10.0";
@@ -15,8 +15,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "DA356C21-3640-81D9-050F-28A96061EC20";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1.1325670968341945 0.99460638209308927 -3.4447223947341206 ;
-	setAttr ".r" -type "double3" -15.338352729773295 -1241.7999999998203 0 ;
+	setAttr ".t" -type "double3" -1.5882069564064352 2.7019499906477735 2.0772884663846907 ;
+	setAttr ".r" -type "double3" -45.938352729779645 -1117.3999999997486 -4.0036457024283153e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "192E5D81-E244-D1D9-D231-72A4F981E878";
 	setAttr -k off ".v" no;
@@ -3178,7 +3178,7 @@ createNode mesh -n "clear_takeout_container_TEXTURED:polySurfaceShape1" -p "clea
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "fries" -p "takeout_fries";
 	rename -uid "D9F4F620-AD46-26E1-5CDF-1F83A9C7BE45";
-	setAttr ".t" -type "double3" 0 0.028165692631946015 0.034272524895166245 ;
+	setAttr ".t" -type "double3" -0.0035680401285236307 0.028165692631946015 0.034272524895166245 ;
 	setAttr ".rp" -type "double3" 0 0.25522064836811048 0 ;
 	setAttr ".sp" -type "double3" 0 0.25522064836811048 0 ;
 createNode mesh -n "friesShape" -p "fries";
