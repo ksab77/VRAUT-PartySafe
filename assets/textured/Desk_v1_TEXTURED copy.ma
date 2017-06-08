@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff04 scene
 //Name: Desk_v1_TEXTURED.ma
-//Last modified: Wed, Jun 07, 2017 04:26:21 PM
+//Last modified: Wed, Jun 07, 2017 04:43:49 PM
 //Codeset: UTF-8
 requires maya "2017ff04";
 requires "stereoCamera" "10.0";
@@ -15,13 +15,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "55FD9E36-5546-3ED6-3EF8-CFA1A68CAD8B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.0805073625413617 4.8929797988419876 9.6217144824837924 ;
-	setAttr ".r" -type "double3" 345.86164726975636 355.80000000002417 -7.9727978338260761e-16 ;
+	setAttr ".t" -type "double3" -5.0820651043838314 9.1487384817815602 12.089381919213704 ;
+	setAttr ".r" -type "double3" 335.06164726990562 327.39999999989175 9.4383810075395136e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "4A901B26-454D-3C7D-908C-87B18F953D4F";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 7.2265398819456825;
+	setAttr ".coi" 14.746189526689262;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -134,13 +134,14 @@ createNode mesh -n "pCubeShape4" -p "pCube4";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.31130778296460215 0.57384669855519221 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 24 ".uvst[0].uvsp[0:23]" -type "float2" 0.49362877 0.50357425
 		 0.6942246 0.50357425 0.6942246 0.73972052 0.49362877 0.73972052 0.28393877 0.50357443
 		 0.48453468 0.50357443 0.48453468 0.7397207 0.28393877 0.7397207 0.24957708 0.49642581
 		 0.24957708 0.0039162086 0.45017293 0.0039162086 0.45017293 0.49642581 0.70331877
-		 0.99608392 0.70331877 0.50357431 0.90391469 0.50357431 0.90391469 0.99608392 0.0035537307
-		 0.49642581 0.0035537307 0.0039162086 0.2397 0.0039162086 0.2397 0.49642581 0.46004993
+		 0.99608392 0.70331877 0.50357431 0.90391469 0.50357431 0.90391469 0.99608392 0.19323465
+		 0.8201015 0.19323465 0.3275919 0.42938092 0.3275919 0.42938092 0.8201015 0.46004993
 		 0.49642599 0.46004993 0.0039162086 0.69619644 0.0039162086 0.69619644 0.49642599;
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
@@ -543,7 +544,7 @@ createNode mesh -n "desk_cabinetShape" -p "desk_cabinet";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.54286510764827112 0.68446148336538193 ;
+	setAttr ".pv" -type "double2" 0.5134250040720687 0.59820003807544708 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 58 ".uvst[0].uvsp[0:57]" -type "float2" 0.53034806 0.41213664
 		 0.53034806 0.0032587748 0.88671988 0.0032587748 0.88671988 0.41213664 0.6397121 0.82889199
@@ -555,12 +556,12 @@ createNode mesh -n "desk_cabinetShape" -p "desk_cabinet";
 		 0.26722953 0.0032587543 0.2787976 0.0032587543 0.2787976 0.41213667 0.26722953 0.41213667
 		 0.50601494 0.41213667 0.50601494 0.39395922 0.2787976 0.39395922 0.50601494 0.0032587543
 		 0.52021825 0.0032587543 0.52021825 0.41213667 0.027230144 0.42001405 0.027230144
-		 0.6472314 0.0090526734 0.6472314 0.0090526734 0.42001405 0.61812264 0.42001405 0.62969065
-		 0.42001405 0.62969065 0.77638596 0.61812264 0.77638596 0.35511252 0.42001417 0.36668062
-		 0.42001417 0.36668062 0.77638602 0.35511252 0.77638602 0.59389794 0.42001417 0.59389794
-		 0.77638602 0.60810131 0.42001417 0.60810131 0.77638602 0.23268957 0.82655799 0.23268957
-		 0.54236495 0.8530407 0.54236495 0.8530407 0.82655799 0.093649149 0.42001405 0.10785245
-		 0.42001405 0.10785245 0.77638596 0.093649149 0.77638596;
+		 0.6472314 0.0090526734 0.6472314 0.0090526734 0.42001405 0.76593196 0.27052468 0.7911005
+		 0.27052468 0.7911005 0.92587531 0.76593196 0.92587531 0.19370267 0.27052492 0.21887136
+		 0.27052492 0.21887136 0.92587543 0.19370267 0.92587543 0.94030762 0.13171345 0.94030762
+		 1.064687014 0.96525663 0.13171345 0.96525663 1.064687014 0.077020898 0.89787233 0.077020898
+		 0.47105059 1.0087093115 0.47105059 1.0087093115 0.89787233 0.061593428 0.13171315
+		 0.086542316 0.13171315 0.086542316 1.064686775 0.061593428 1.064686775;
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
@@ -624,16 +625,16 @@ createNode mesh -n "desk_topShape" -p "desk_top";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.25 0.125 ;
+	setAttr ".pv" -type "double2" 0.47786251362413168 0.49512055807281286 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr -s 24 ".uvst[0].uvsp[0:23]" -type "float2" 0.96138942 0.4446784
-		 0.96138942 0.0029009043 0.97236812 0.0029009043 0.97236812 0.4446784 0.98510528 0.44467843
-		 0.98510528 0.0029009043 0.99608392 0.0029009043 0.99608392 0.44467843 0.027847541
-		 0.73786157 0.027847541 0.0029009043 0.46962503 0.0029009043 0.46962503 0.73786157
-		 0.50647634 0.73786157 0.50647634 0.0029009043 0.94825399 0.0029009043 0.94825399
-		 0.73786157 0.0039160866 0.73786157 0.0039160866 0.0029009043 0.014894752 0.0029009043
-		 0.014894752 0.73786157 0.48276058 0.73786157 0.48276058 0.0029009043 0.49373925 0.0029009043
-		 0.49373925 0.73786157;
+	setAttr -s 24 ".uvst[0].uvsp[0:23]" -type "float2" 0.46826929 0.97376114
+		 0.46826929 0.056537755 0.49445665 0.056537755 0.49445665 0.97376114 0.52483845 0.97376114
+		 0.52483845 0.056537755 0.55102575 0.056537755 0.55102575 0.97376114 0.044702038 0.73786157
+		 0.044702038 0.0029008985 0.46993354 0.0029008985 0.46993354 0.73786157 0.50647634
+		 0.73786157 0.50647634 0.0029009043 0.94825399 0.0029009043 0.94825399 0.73786157
+		 0.015024096 0.98734021 0.015024096 0.027300477 0.052504361 0.027300477 0.052504361
+		 0.98734021 0.91102302 0.98734021 0.91102302 0.027300477 0.94880676 0.027300477 0.94880676
+		 0.98734021;
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
@@ -729,6 +730,7 @@ createNode script -n "sceneConfigurationScriptNode";
 createNode blinn -n "desk_wood_material";
 	rename -uid "9AEF74CA-814A-DE42-5BAF-BEACC7E6F7F0";
 	setAttr ".ambc" -type "float3" 0.24025974 0.24025974 0.24025974 ;
+	setAttr ".rfl" 0;
 createNode shadingEngine -n "blinn1SG";
 	rename -uid "99976D99-1F40-B628-4C06-C383DC1A147D";
 	setAttr ".ihi" 0;
@@ -754,6 +756,14 @@ createNode bump2d -n "bump2d1";
 	setAttr ".bd" 0.10000000149011612;
 	setAttr ".vc1" -type "float3" 0 2.9999999e-05 0 ;
 	setAttr ".vc2" -type "float3" 9.9999997e-06 9.9999997e-06 0 ;
+createNode file -n "file3";
+	rename -uid "C5A19BF9-E849-CEF4-3BA5-8381B728DA06";
+	setAttr ".cg" -type "float3" 0.18181819 0.18181819 0.18181819 ;
+	setAttr ".ftn" -type "string" "/Users/rachelthomas/Desktop/VRAUT-PartySafe//sourceimages/wood_1_SPEC.png";
+	setAttr ".exp" 0.51470589637756348;
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "place2dTexture3";
+	rename -uid "47530D5F-D947-4C6D-CFA8-08833001360A";
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -772,10 +782,10 @@ select -ne :defaultShaderList1;
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 3 ".u";
+	setAttr -s 4 ".u";
 select -ne :defaultRenderingList1;
 select -ne :defaultTextureList1;
-	setAttr -s 2 ".tx";
+	setAttr -s 3 ".tx";
 select -ne :initialShadingGroup;
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
@@ -797,6 +807,7 @@ connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
 connectAttr "file1.oc" "desk_wood_material.c";
 connectAttr "bump2d1.o" "desk_wood_material.n";
+connectAttr "file3.oc" "desk_wood_material.sc";
 connectAttr "desk_wood_material.oc" "blinn1SG.ss";
 connectAttr "pCubeShape6.iog" "blinn1SG.dsm" -na;
 connectAttr "pCubeShape4.iog" "blinn1SG.dsm" -na;
@@ -856,12 +867,36 @@ connectAttr "place2dTexture2.vc1" "file2.vc1";
 connectAttr "place2dTexture2.o" "file2.uv";
 connectAttr "place2dTexture2.ofs" "file2.fs";
 connectAttr "file2.oa" "bump2d1.bv";
+connectAttr ":defaultColorMgtGlobals.cme" "file3.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "file3.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "file3.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "file3.ws";
+connectAttr "place2dTexture3.c" "file3.c";
+connectAttr "place2dTexture3.tf" "file3.tf";
+connectAttr "place2dTexture3.rf" "file3.rf";
+connectAttr "place2dTexture3.mu" "file3.mu";
+connectAttr "place2dTexture3.mv" "file3.mv";
+connectAttr "place2dTexture3.s" "file3.s";
+connectAttr "place2dTexture3.wu" "file3.wu";
+connectAttr "place2dTexture3.wv" "file3.wv";
+connectAttr "place2dTexture3.re" "file3.re";
+connectAttr "place2dTexture3.of" "file3.of";
+connectAttr "place2dTexture3.r" "file3.ro";
+connectAttr "place2dTexture3.n" "file3.n";
+connectAttr "place2dTexture3.vt1" "file3.vt1";
+connectAttr "place2dTexture3.vt2" "file3.vt2";
+connectAttr "place2dTexture3.vt3" "file3.vt3";
+connectAttr "place2dTexture3.vc1" "file3.vc1";
+connectAttr "place2dTexture3.o" "file3.uv";
+connectAttr "place2dTexture3.ofs" "file3.fs";
 connectAttr "blinn1SG.pa" ":renderPartition.st" -na;
 connectAttr "desk_wood_material.msg" ":defaultShaderList1.s" -na;
 connectAttr "place2dTexture1.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "place2dTexture2.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "bump2d1.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "place2dTexture3.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "file1.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file2.msg" ":defaultTextureList1.tx" -na;
+connectAttr "file3.msg" ":defaultTextureList1.tx" -na;
 // End of Desk_v1_TEXTURED.ma
