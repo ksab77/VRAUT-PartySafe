@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff04 scene
 //Name: phone_TEXTURED.ma
-//Last modified: Thu, Jun 08, 2017 09:12:35 PM
+//Last modified: Thu, Jun 08, 2017 10:02:06 PM
 //Codeset: UTF-8
 requires maya "2017ff04";
 requires -nodeType "RenderMan" -nodeType "PxrDebugShadingContext" -nodeType "OmnidirectionalStereo"
@@ -18,13 +18,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "627D2D53-1F41-8874-7242-DA91CE365114";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1.4030031464684218 5.2531057712520193 12.249937982706227 ;
+	setAttr ".t" -type "double3" -1.1862566401779593 3.638066467054605 32.946948122905241 ;
 	setAttr ".r" -type "double3" 364.46164727098977 -719.40000000027112 -3.1061807449776433e-18 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "BF50FEC2-4E4A-206E-C5AB-9DB4318DBA9F";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 7.7314176304428166;
+	setAttr ".coi" 28.492476364177765;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
