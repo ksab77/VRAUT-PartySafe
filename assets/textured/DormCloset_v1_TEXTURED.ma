@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff04 scene
 //Name: DormCloset_v1_TEXTURED.ma
-//Last modified: Sun, Jun 11, 2017 02:39:55 PM
+//Last modified: Sun, Jun 11, 2017 02:40:47 PM
 //Codeset: UTF-8
 requires maya "2017ff04";
 requires "stereoCamera" "10.0";
@@ -14,8 +14,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "1D8F2E9D-D940-163D-3CA3-3195A5EC7DA6";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 23.389543520894666 8.284297315194916 17.629454656547207 ;
-	setAttr ".r" -type "double3" -8.7383527296181072 54.199999999873171 0 ;
+	setAttr ".t" -type "double3" 23.560166848032036 11.335896273154344 16.265710575212285 ;
+	setAttr ".r" -type "double3" -14.738352729618287 56.599999999873432 1.4444441239496298e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "E141BB54-2849-AEB6-DE78-CA92D0FEF040";
 	setAttr -k off ".v" no;
