@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff04 scene
 //Name: MiniFridge_v1_TEXTURED.ma
-//Last modified: Sun, Jun 11, 2017 02:02:08 PM
+//Last modified: Sun, Jun 11, 2017 02:30:46 PM
 //Codeset: UTF-8
 requires maya "2017ff04";
 requires "stereoCamera" "10.0";
@@ -15,13 +15,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "98C958AF-F345-169D-4131-47926407CF39";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 7.202158057976888 16.510711244029043 34.373477078634046 ;
-	setAttr ".r" -type "double3" -18.338352729642736 -1072.6000000000445 0 ;
+	setAttr ".t" -type "double3" 1.6174538877918108 10.991595099655612 -12.345901334189938 ;
+	setAttr ".r" -type "double3" -21.938352729632125 -894.59999999996614 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "B966DC0F-3F44-A256-F2CF-53A3A268C36E";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 35.114336776512239;
+	setAttr ".coi" 14.798459590160197;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
