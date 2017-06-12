@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff04 scene
 //Name: Solo_Cup_TEXTURED.ma
-//Last modified: Sun, Jun 11, 2017 08:40:56 PM
+//Last modified: Mon, Jun 12, 2017 11:50:26 AM
 //Codeset: UTF-8
 requires maya "2017ff04";
 requires "stereoCamera" "10.0";
@@ -14,8 +14,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "75CD5DAF-4A8C-A6D2-E380-7C86BFBC283C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 5.0997965089021866 6.2482763155943974 11.378019020418755 ;
-	setAttr ".r" -type "double3" 1422.8616472704718 -1776.5999999980879 -4.3319785491942512e-16 ;
+	setAttr ".t" -type "double3" 6.4021060836904873 4.3829606368140031 11.214230882314075 ;
+	setAttr ".r" -type "double3" 1431.2616472704187 -1770.999999997995 4.5456251665192303e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "9B04DF76-41D3-BCD0-2FFC-879AD92BC92B";
 	setAttr -k off ".v" no;
