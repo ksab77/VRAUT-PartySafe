@@ -1,11 +1,7 @@
 //Maya ASCII 2017ff04 scene
 //Name: BeerPongSet_v1.ma
-//Last modified: Mon, Jun 12, 2017 01:39:02 PM
+//Last modified: Mon, Jun 12, 2017 01:43:17 PM
 //Codeset: UTF-8
-file -rdi 1 -ns "Chair_TEXTURED" -rfn "Chair_TEXTUREDRN" -op "v=0;" -typ "mayaAscii"
-		 "/Users/mhight/VRAUT/VRAUT-PartySafe//assets/textured/Chair_TEXTURED.ma";
-file -r -ns "Chair_TEXTURED" -dr 1 -rfn "Chair_TEXTUREDRN" -op "v=0;" -typ "mayaAscii"
-		 "/Users/mhight/VRAUT/VRAUT-PartySafe//assets/textured/Chair_TEXTURED.ma";
 requires maya "2017ff04";
 requires "stereoCamera" "10.0";
 requires -nodeType "RenderMan" -nodeType "PxrDebugShadingContext" -nodeType "OmnidirectionalStereo"
@@ -23,17 +19,17 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "4D5A5FE1-2346-0A40-EB33-E8B177998144";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -15.920579563957471 20.838812015142143 1.2342979745906439 ;
-	setAttr ".r" -type "double3" 333.86164726798717 1348.5999999998621 0 ;
+	setAttr ".t" -type "double3" -6.1472939181870707 7.0631099793788561 -1.9133310067478146 ;
+	setAttr ".r" -type "double3" 349.46164726775811 1342.5999999999883 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "86DBAE9E-6A4F-5023-F68D-41B3ED1B2E5F";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 30.582456767435808;
+	setAttr ".coi" 11.363401321353036;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0.043898582458496094 8.3806600570678711 11.841010093688965 ;
+	setAttr ".tp" -type "double3" 0.23733431100845337 0.097921609878540039 -0.018553733825683594 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "7FF446F1-3A4E-7140-B93B-A68F67E2C7E3";
@@ -961,6 +957,29 @@ createNode mesh -n "pCubeShape12" -p "pCube14";
 	setAttr -s 8 ".pt[0:7]" -type "float3"  0 0 0.83565664 0.019932911 
 		0 0.83565664 0 0 0.83565664 0.019932911 0 0.83565664 0 0 0.049347851 0.019932911 
 		0 0.049347851 0 0 0.049347851 0.019932911 0 0.049347851;
+createNode transform -n "pCube20" -p "columns";
+	rename -uid "567380DC-6E45-BF09-0F7A-A383BE7F62AD";
+	setAttr ".t" -type "double3" 10.710799085735347 6.4361391915766983 0 ;
+	setAttr ".r" -type "double3" 0 0.5 0 ;
+	setAttr ".s" -type "double3" 1 1 6.9144466712937334 ;
+createNode mesh -n "pCubeShape20" -p "pCube20";
+	rename -uid "7D67AC5B-F44B-2FCB-4949-33B508B81E11";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.75 0.125 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 6 ".pt";
+	setAttr ".pt[1]" -type "float3" -0.56903911 0 -0.00071819604 ;
+	setAttr ".pt[2]" -type "float3" 0 -0.55834132 0 ;
+	setAttr ".pt[3]" -type "float3" -0.56903911 -0.55834132 -0.00071819604 ;
+	setAttr ".pt[4]" -type "float3" 0 -0.55834132 0 ;
+	setAttr ".pt[5]" -type "float3" -0.56903911 -0.55834132 -0.00071819604 ;
+	setAttr ".pt[7]" -type "float3" -0.56903911 0 -0.00071819604 ;
 createNode transform -n "baseboard1";
 	rename -uid "A078A046-634A-5CFA-3628-1EAC7596A4B3";
 	setAttr ".t" -type "double3" 0 8.3574974083882623 0 ;
@@ -1388,58 +1407,6 @@ createNode groupId -n "groupId35";
 createNode groupId -n "groupId36";
 	rename -uid "417D1A5A-144D-8665-98F0-309FC5BF9334";
 	setAttr ".ihi" 0;
-createNode reference -n "Chair_TEXTUREDRN";
-	rename -uid "46C17722-FD43-1E01-7D2F-888F2F981776";
-	setAttr -s 10 ".phl";
-	setAttr ".phl[1]" 0;
-	setAttr ".phl[2]" 0;
-	setAttr ".phl[3]" 0;
-	setAttr ".phl[4]" 0;
-	setAttr ".phl[5]" 0;
-	setAttr ".phl[6]" 0;
-	setAttr ".phl[7]" 0;
-	setAttr ".phl[8]" 0;
-	setAttr ".phl[9]" 0;
-	setAttr ".phl[10]" 0;
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"Chair_TEXTUREDRN"
-		"Chair_TEXTUREDRN" 0
-		"Chair_TEXTUREDRN" 20
-		2 "|Chair_TEXTURED:chair" "translate" " -type \"double3\" 8.19633230050684247 1.55034575166219768 9.72297302282435894"
-		
-		2 "|Chair_TEXTURED:chair" "translateX" " -av"
-		2 "|Chair_TEXTURED:chair" "translateY" " -av"
-		2 "|Chair_TEXTURED:chair" "translateZ" " -av"
-		2 "|Chair_TEXTURED:chair" "rotate" " -type \"double3\" 0 -27.97448328556647823 0"
-		
-		2 "|Chair_TEXTURED:chair" "rotateY" " -av"
-		2 "|Chair_TEXTURED:chair" "scale" " -type \"double3\" 0.36743560467786301 0.36743560467786301 0.36743560467786301"
-		
-		2 "|Chair_TEXTURED:chair" "scaleX" " -av"
-		2 "|Chair_TEXTURED:chair" "scaleY" " -av"
-		2 "|Chair_TEXTURED:chair" "scaleZ" " -av"
-		5 4 "Chair_TEXTUREDRN" "|Chair_TEXTURED:chair.scaleX" "Chair_TEXTUREDRN.placeHolderList[1]" 
-		""
-		5 4 "Chair_TEXTUREDRN" "|Chair_TEXTURED:chair.scaleY" "Chair_TEXTUREDRN.placeHolderList[2]" 
-		""
-		5 4 "Chair_TEXTUREDRN" "|Chair_TEXTURED:chair.scaleZ" "Chair_TEXTUREDRN.placeHolderList[3]" 
-		""
-		5 4 "Chair_TEXTUREDRN" "|Chair_TEXTURED:chair.visibility" "Chair_TEXTUREDRN.placeHolderList[4]" 
-		""
-		5 4 "Chair_TEXTUREDRN" "|Chair_TEXTURED:chair.translateX" "Chair_TEXTUREDRN.placeHolderList[5]" 
-		""
-		5 4 "Chair_TEXTUREDRN" "|Chair_TEXTURED:chair.translateY" "Chair_TEXTUREDRN.placeHolderList[6]" 
-		""
-		5 4 "Chair_TEXTUREDRN" "|Chair_TEXTURED:chair.translateZ" "Chair_TEXTUREDRN.placeHolderList[7]" 
-		""
-		5 4 "Chair_TEXTUREDRN" "|Chair_TEXTURED:chair.rotateX" "Chair_TEXTUREDRN.placeHolderList[8]" 
-		""
-		5 4 "Chair_TEXTUREDRN" "|Chair_TEXTURED:chair.rotateY" "Chair_TEXTUREDRN.placeHolderList[9]" 
-		""
-		5 4 "Chair_TEXTUREDRN" "|Chair_TEXTURED:chair.rotateZ" "Chair_TEXTUREDRN.placeHolderList[10]" 
-		"";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
 createNode RenderMan -s -n "renderManGlobals";
 	rename -uid "BD31E52F-1649-D675-B223-4A83E641E57C";
 createNode OmnidirectionalStereo -s -n "OmnidirectionalStereo";
@@ -2327,47 +2294,6 @@ createNode RenderMan -s -n "renderManRISGlobals";
 	setAttr ".rman__riopt__Integrator_matCap" -type "string" "";
 	setAttr ".rman__EnvLight" -type "string" "";
 	setAttr -s 3 ".p";
-createNode animCurveTU -n "chair_scaleX";
-	rename -uid "F637753F-A14A-7247-2A8F-6197D7774526";
-	setAttr ".tan" 2;
-	setAttr ".ktv[0]"  1 1;
-createNode animCurveTU -n "chair_scaleY";
-	rename -uid "AFC94589-B841-2328-B9CB-26BE3B00C89D";
-	setAttr ".tan" 2;
-	setAttr ".ktv[0]"  1 1;
-createNode animCurveTU -n "chair_scaleZ";
-	rename -uid "14DE02DC-184A-985C-BA3A-08836BD6A6AF";
-	setAttr ".tan" 2;
-	setAttr ".ktv[0]"  1 1;
-createNode animCurveTU -n "chair_visibility";
-	rename -uid "47E79C41-AD4E-F907-3778-8DB22E07B0B0";
-	setAttr ".tan" 9;
-	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTL -n "chair_translateX";
-	rename -uid "D28ED025-2344-2014-0F0D-749F8DD81A78";
-	setAttr ".tan" 2;
-	setAttr ".ktv[0]"  1 0;
-createNode animCurveTL -n "chair_translateY";
-	rename -uid "DB8B191B-2B4C-D89B-ABFB-C8881E12EDAA";
-	setAttr ".tan" 2;
-	setAttr ".ktv[0]"  1 0;
-createNode animCurveTL -n "chair_translateZ";
-	rename -uid "093E7649-2C43-6C5E-7FB4-3DB9F117B052";
-	setAttr ".tan" 2;
-	setAttr ".ktv[0]"  1 0;
-createNode animCurveTA -n "chair_rotateX";
-	rename -uid "7D128490-584C-26D2-E474-D0906D6483B5";
-	setAttr ".tan" 2;
-	setAttr ".ktv[0]"  1 0;
-createNode animCurveTA -n "chair_rotateY";
-	rename -uid "3A7D84E3-1045-1EC3-4575-5AAB920FAE5C";
-	setAttr ".tan" 2;
-	setAttr ".ktv[0]"  1 0;
-createNode animCurveTA -n "chair_rotateZ";
-	rename -uid "A6144BBC-A448-1D8E-DC6D-4DA0A5EA93B6";
-	setAttr ".tan" 2;
-	setAttr ".ktv[0]"  1 0;
 createNode polyCube -n "polyCube1";
 	rename -uid "252FC24D-1E46-FEC4-248F-CEA5B5AA93FC";
 	setAttr ".cuv" 4;
@@ -2485,6 +2411,9 @@ createNode polyTweak -n "polyTweak4";
 	setAttr ".uopa" yes;
 	setAttr -s 3 ".tk";
 	setAttr ".tk[23]" -type "float3" -0.024023056 0.0090961456 0.15006971 ;
+createNode polyCube -n "polyCube2";
+	rename -uid "38AFE9F3-C74E-6347-41D2-C0B3C18ACC09";
+	setAttr ".cuv" 4;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -2497,20 +2426,15 @@ select -ne :hardwareRenderingGlobals;
 	setAttr ".msaa" yes;
 	setAttr ".fprt" yes;
 select -ne :renderPartition;
-	setAttr -s 7 ".st";
+	setAttr -s 2 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 9 ".s";
+	setAttr -s 4 ".s";
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
-select -ne :defaultRenderUtilityList1;
-	setAttr -s 4 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 2 ".r";
-select -ne :defaultTextureList1;
-	setAttr -s 14 ".tx";
 select -ne :initialShadingGroup;
-	setAttr -s 24 ".dsm";
+	setAttr -s 25 ".dsm";
 	setAttr ".ro" yes;
 	setAttr -s 12 ".gn";
 select -ne :initialParticleSE;
@@ -2525,16 +2449,6 @@ select -ne :hardwareRenderGlobals;
 select -ne :defaultHideFaceDataSet;
 select -ne :ikSystem;
 	setAttr -s 4 ".sol";
-connectAttr "chair_scaleX.o" "Chair_TEXTUREDRN.phl[1]";
-connectAttr "chair_scaleY.o" "Chair_TEXTUREDRN.phl[2]";
-connectAttr "chair_scaleZ.o" "Chair_TEXTUREDRN.phl[3]";
-connectAttr "chair_visibility.o" "Chair_TEXTUREDRN.phl[4]";
-connectAttr "chair_translateX.o" "Chair_TEXTUREDRN.phl[5]";
-connectAttr "chair_translateY.o" "Chair_TEXTUREDRN.phl[6]";
-connectAttr "chair_translateZ.o" "Chair_TEXTUREDRN.phl[7]";
-connectAttr "chair_rotateX.o" "Chair_TEXTUREDRN.phl[8]";
-connectAttr "chair_rotateY.o" "Chair_TEXTUREDRN.phl[9]";
-connectAttr "chair_rotateZ.o" "Chair_TEXTUREDRN.phl[10]";
 connectAttr "groupId33.id" "roomShape.iog.og[2].gid";
 connectAttr "set1.mwc" "roomShape.iog.og[2].gco";
 connectAttr "groupId34.id" "roomShape.iog.og[4].gid";
@@ -2552,6 +2466,7 @@ connectAttr "set2.mwc" "left_columnShape.iog.og[0].gco";
 connectAttr "groupId36.id" "left_columnShape.iog.og[1].gid";
 connectAttr ":initialShadingGroup.mwc" "left_columnShape.iog.og[1].gco";
 connectAttr "polyCube1.out" "pCubeShape12.i";
+connectAttr "polyCube2.out" "pCubeShape20.i";
 connectAttr "groupId43.id" "|baseboard1|pCube12|transform4|pCube12Shape.iog.og[0].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|baseboard1|pCube12|transform4|pCube12Shape.iog.og[0].gco"
@@ -2661,6 +2576,7 @@ connectAttr "|baseboard1|pCube11|transform3|pCube11Shape.iog.og[0]" ":initialSha
 connectAttr "|baseboard1|pCube11|transform3|pCube11Shape.ciog.cog[2]" ":initialShadingGroup.dsm"
 		 -na;
 connectAttr "baseboard1_pCube12Shape.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "pCubeShape20.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "groupId14.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId32.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId36.msg" ":initialShadingGroup.gn" -na;
