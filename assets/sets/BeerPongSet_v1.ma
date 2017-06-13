@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff04 scene
 //Name: BeerPongSet_v1.ma
-//Last modified: Mon, Jun 12, 2017 07:28:13 PM
+//Last modified: Mon, Jun 12, 2017 07:31:56 PM
 //Codeset: UTF-8
 requires maya "2017ff04";
 requires -nodeType "RenderMan" -nodeType "PxrDebugShadingContext" -nodeType "OmnidirectionalStereo"
@@ -19,13 +19,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "4D5A5FE1-2346-0A40-EB33-E8B177998144";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -23.641470868558272 35.53032084628947 -8.2644396459462381 ;
-	setAttr ".r" -type "double3" 312.86164726761831 -1547.3999999999446 0 ;
+	setAttr ".t" -type "double3" 31.07835415940383 39.357115700879582 -12.821432879270393 ;
+	setAttr ".r" -type "double3" 315.86164726761376 -1696.1999999999257 -2.5444437451708134e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "86DBAE9E-6A4F-5023-F68D-41B3ED1B2E5F";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 35.928931017355048;
+	setAttr ".coi" 44.592445043324282;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
