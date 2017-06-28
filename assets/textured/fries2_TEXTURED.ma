@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff04 scene
 //Name: fries2_TEXTURED.ma
-//Last modified: Tue, Jun 27, 2017 09:00:22 PM
+//Last modified: Tue, Jun 27, 2017 09:02:15 PM
 //Codeset: UTF-8
 requires maya "2017ff04";
 requires "stereoCamera" "10.0";
@@ -14,8 +14,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "59B80057-2343-C3CA-6159-CA94C2A90A34";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1.372474815293564 1.2281825366524721 1.1916772850032424 ;
-	setAttr ".r" -type "double3" -35.738352729502921 -401.00000000006145 -2.1071381394997384e-15 ;
+	setAttr ".t" -type "double3" -1.1595393915636387 1.9052867541541998 0.51991316433532475 ;
+	setAttr ".r" -type "double3" -50.138352729504241 -407.80000000005481 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3221D7E4-3D40-C61A-7AF6-8784A39FC9D4";
 	setAttr -k off ".v" no;
