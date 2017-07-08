@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff04 scene
 //Name: DJBooth_v1_TEXTURED.ma
-//Last modified: Fri, Jul 07, 2017 11:14:24 PM
+//Last modified: Fri, Jul 07, 2017 11:16:36 PM
 //Codeset: UTF-8
 requires maya "2017ff04";
 requires "stereoCamera" "10.0";
@@ -14,8 +14,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "D469A40A-FD4E-AD0F-31FC-EA8B25F3D3B5";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.258399141116024 2.5724017754392383 8.7094583700787922 ;
-	setAttr ".r" -type "double3" -9.33835273184126 -714.60000000019579 4.9917703432618301e-17 ;
+	setAttr ".t" -type "double3" 2.0118055918310276 2.9928457618338364 8.5300816485404347 ;
+	setAttr ".r" -type "double3" -11.738352731840987 -710.2000000001575 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "57C95AC7-6A42-D2BA-35CF-BB81989A8E0D";
 	setAttr -k off ".v" no;
