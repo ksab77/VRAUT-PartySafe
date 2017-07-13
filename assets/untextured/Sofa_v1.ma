@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff04 scene
 //Name: Sofa_v1.ma
-//Last modified: Wed, Jul 05, 2017 08:13:07 PM
+//Last modified: Thu, Jul 06, 2017 11:09:21 AM
 //Codeset: UTF-8
 requires maya "2017ff04";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "A9A52CAC-D44F-33A4-10FC-AFA7CEABE6D9";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1.3518287287128388 15.989483119819834 15.791295573019852 ;
-	setAttr ".r" -type "double3" -30.338352729758679 728.59999999942238 4.0209028513307032e-16 ;
+	setAttr ".t" -type "double3" -3.7199643246374299 7.5080098414897094 16.523240685881792 ;
+	setAttr ".r" -type "double3" -10.538352729754868 722.19999999939171 -9.946564829275789e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "56CDC824-8D4A-C939-B41B-668647B4A867";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 24.889661931009897;
+	setAttr ".coi" 22.36507660522371;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
